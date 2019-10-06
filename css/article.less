@@ -1,0 +1,159 @@
+.article {
+    max-width: 1140px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &-section {
+        max-width: 47.37%;
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-img {
+        width: 100%;
+    }
+    &-title {
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    &-text {
+        font-size: 14px;
+        line-height: 27px;
+        overflow: hidden;
+        margin: 0;
+    }
+    &-time {
+        font-size: 25px;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+}
+.read-more {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.right .article-time {
+    align-self: flex-end;
+}
+.article-one .left  {
+    max-width: 360px;
+    margin-top: 15px;
+}
+.article-one .article-title {
+    margin-bottom: 35px;
+}
+.article-one .article-text {
+    height: 50px;
+}
+.fixer {
+    width: 1px;
+    height: 1px;
+    position: relative;
+}
+.lines {
+    position: absolute;
+    width: 287px;
+    height: 88px;
+    left:-173.63px;
+    top:-150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.line1 {
+    width: 265px;
+    background-color: white;
+    height: 5px;
+}
+.line2 {
+    width: 243px;
+    background-color: white;
+    height: 5px;
+    align-self: flex-end;
+}
+.line3 {
+    width: 257px;
+    background-color: white;
+    height: 5px;
+    align-self: center;
+}
+.inside1 {
+    height: 5px;
+    width: 65.5%;
+    background-color: @colorBlack;
+}
+.inside2 {
+    height: 5px;
+    width: 53.5%;
+    background-color: @colorBlack;
+}
+.inside3 {
+    height: 5px;
+    width: 62%;
+    background-color: @colorBlack;
+}
+.article-two {
+    position: relative;
+    .back-gray-block {
+        background-color: @blockColor;
+        position: absolute;
+        height: 160px;
+        width: 87.7%;
+        top: 110px;
+        left: 6.14%;
+        z-index: -1;
+    }
+}
+.article-two .article-title {
+    align-self: flex-end;
+    text-align: end;
+    margin-top: 13px;
+}
+.article-two .article-title::before {
+    content:"EA EUM CIBOT";
+    font-size: 40px;
+}
+.article-three {
+    height: 10px;
+    margin-top: 400px; 
+}
+.article-three .left {
+    position: relative;
+    .gray-back-block {
+        position: absolute;
+        background-color: @blockColor;
+        height: 250px;
+        width: 485px;
+        top: -420px;
+        left: 10%;
+        transform: rotate(68deg);
+        z-index: -1;
+    }
+}
+.article-three .article-title {
+    position: absolute;
+    bottom: -105%;
+    left: 0;
+    font-size: 79px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.article-three .right {
+    position: absolute;
+    left: 52.6%;
+    bottom: 0;
+}
+.article-four .article-title {
+    text-align: end;
+    margin-top: -26px;
+}
+.article-four .article-title::before {
+    content: "PRI ATT MEDIOCREM";
+    font-size: 40px;
+    text-align: end;
+}

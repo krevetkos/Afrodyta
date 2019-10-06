@@ -1,0 +1,125 @@
+@media screen and (max-width: 700px) {
+    .header {
+        height: 150px;
+    }
+    .navigation {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+        top: 40px;
+        width:0;
+        transition: width 0.5s ease-out;
+        &-item {
+            list-style: none;
+            background: @colorBlack;
+            margin-bottom: 1px;
+        }
+        &-link {
+            font-weight: bold;
+            color:@colorBlack;
+            text-decoration: none;
+            font-size: 24px;
+            color: white;
+            text-align: left;
+        }
+    }
+    .shov-nav {
+        padding: 0;
+        width:150px;   
+    }
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 9px;
+    }
+    .container .bar1,
+               .bar2,
+               .bar3 {
+        width: 45px;
+        height: 6px;
+        background-color:@colorBlack;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change  .bar1 {
+        transform: rotate(-45deg) translate(-10px, 9px);
+    }
+    .change  .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    .article {
+        flex-direction: column;
+        align-items: center;
+        &-title {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        &-text {
+            margin-left: 5px;
+        }
+        &-time {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        &-section {
+            max-width: 540px;
+        }
+    }
+    .read-more {
+        margin-left: 5px;
+    }
+       
+    .article-one .left {
+        max-width: 540px;
+        margin-top: 0;
+    }
+    .article-three {
+        height: 100%;
+        margin-top: 0;
+    }
+    .article-three .left {
+        position: static;
+    }
+    .article-three .article-title {
+        position: static;
+    }
+    .article-three .right {
+        position: static;
+    }
+    .article-four .article-title {
+        margin-top: 20px;
+    }
+    .info-link {
+        font-size: 3.22vw;
+    }
+    .info-text {
+        font-size: 2.22vw;
+    }
+    .footer-info {
+        font-size: 2.5vw;
+    }
+    .footer-info p {
+        margin: 0;
+    }
+    .footer-text {
+        font-size: 2.22vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+  }
+  @media screen and (max-width: 500px) {
+      .gray-back-block{
+          display: none;
+      }
+  }
